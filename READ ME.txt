@@ -1,0 +1,1 @@
+This is a custom calculator I made for an architect friend. It has some custom features she asked and a graphic design that makes it look pretty. The original idea was from a Scrimba course.
