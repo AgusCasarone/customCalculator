@@ -2,15 +2,15 @@
     margin: 0;
     padding: 0;
     font-family: Inter;
-    color: #fff;
     box-sizing: border-box;
 }
 
 html {
     background-color: #1F2937;
-    width: 350px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
     justify-content: center;
-    margin: 0 auto;
 }
 
 /* MAIN */
@@ -19,6 +19,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: space-around;
+    color: #fff;
 }
 
 /* nav */
@@ -26,8 +27,9 @@ main {
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 4.5rem;
+    color: #fff;
 }
 
 /* toggle dark/light mode */
@@ -103,6 +105,8 @@ nav {
     right: 0px; 
 }
 
+/* CONVERSIONCONVERSIONCONVERSIONCONVERSIONCONVERSIONCONVERSIONCONVERSIONCONVERSIONCONVERSIONCONVERSIONCONVERSIONCONVERSION */
+
 /* unit input */
 
 input::-webkit-outer-spin-button,
@@ -129,6 +133,7 @@ input::-webkit-outer-spin-button,
     width: 21.875rem;
     height: 12rem;
     text-align: center;
+    margin: 0 auto;
 }
 
 h1 {
@@ -173,19 +178,33 @@ h1 {
     margin-top: 1.5rem;
 }
 
+/* RULERULERULERULERULERULERULERULERULERULERULERULERULERULERULERULERULERULERULERULERULERULERULERULERULERULERULERULE */
+
+
+
+
+
+/* CALCULATORCALCULATORCALCULATORCALCULATORCALCULATORCALCULATORCALCULATORCALCULATORCALCULATORCALCULATORCALCULATOR */
+
+
+
+
+
 /* FOOTER */
 
 footer {
-    margin-top: 3rem;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     line-height: 1.25rem;
+    margin-top: 2rem;
+    bottom: 0;
+    color: #fff;
 }
 
 a {
-    color: rgb(190, 190, 190);
+    color: rgb(255, 1, 200);
     font-style: italic;
 }
 
@@ -196,4 +215,11 @@ a {
     flex-direction: column;
     text-align: center;
     margin-bottom: 1rem;
+}
+
+/* LIGHT THEME */
+
+.light {
+    background-color: #98c3ff;
+    color: #1F2937;
 }

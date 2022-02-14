@@ -22,28 +22,21 @@
         
         <main>
             <div class="unit-input">
-                <h1>Metric/Imperial unit conversion</h1>
-                <input type="number" class="input-from-user-conversion" id="users-number" placeholder="Type your number here"></input>
+                <h1>Simple Rule of Three</h1>
+                <div class="rule-inputs">
+                    <input type="number" class="input-from-user-rule" id="first-number" placeholder="25"></input>
+                    <input type="number" class="input-from-user-rule" id="second-number" placeholder="100"></input>
+                    </br>
+                    <input type="number" class="input-from-user-rule" id="third-number" placeholder="1"></input>
+                    <p id="result">4</p>
+                </div>
             </div>
             <div class="results-main-container">
-                <div class="results-container">
-                    <h3 class="type-of-conversion">
-                        Length (Meter/Feet)
-                    </h3>
-                    <p class="conversion-result" id="length">0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
-                </div>
-                <div class="results-container">
-                    <h3 class="type-of-conversion">
-                        Volume (Liters/Gallons)
-                    </h3>
-                    <p class="conversion-result" id="volume">0 liters = 0.000 gallons | 0 gallons = 0.000 liters</p>
-                </div>
-                <div class="results-container">
-                    <h3 class="type-of-conversion">
-                        Mass (Kilograms/Pounds)
-                    </h3>
-                    <p class="conversion-result" id="mass">0 kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
-                </div>
+                <p>If I have </p><p id="explanation-first-number">25</p>
+                <p>when there is </p><p id="explanation-second-number">100</p>
+                </br>
+                <p>then, when I have </p><p id="explanation-third-number">1</p>
+                <p>there will be </p><p id="explanation-result-number">4</p>
             </div>
         </main>
         

@@ -1,8 +1,18 @@
-// Save number to a variable in code
-// When app loads, do calculations and display the results
-// Round numbers to 3 decimal places
-// Use the CSS gradient generator
-// EXTRA: Add an input for the user to change the number and automatically recalculate values when it changes
+// DARK/LIGHT MODE starts with the dark theme
+
+
+let activateLightTheme = document.getElementById("body")
+
+function theme () {
+    if (activateLightTheme.className != "light") {
+        activateLightTheme.className = "light";
+    }
+    else {
+        activateLightTheme.className = "dark";
+    }
+}
+
+// CONVERSION
 
 let input = document.getElementById("users-number")
 
@@ -38,3 +48,4 @@ input.oninput = function updateValues() {
     finalResultVolume.textContent = input.value + " liters = " + resultMetricToAmericanVolume.toFixed(3) + " gallons | " + input.value + " gallons = " + resultAmericanToMetricVolume.toFixed(3) + " liters"
     finalResultMass.textContent = input.value + " kilos = " + resultMetricToAmericanMass.toFixed(3) + " pounds | " + input.value + " pounds = " + resultAmericanToMetricMass.toFixed(3) + " kilos"
 }
+
