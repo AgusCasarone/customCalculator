@@ -1,1 +1,4 @@
 This is a custom calculator I made for an architect friend. It has some custom features she asked and a graphic design that makes it look pretty. The original idea was from a Scrimba course.
+
+
+I know that I didn't follow the best practices when it comes to how I ordered the files, but since I wanted to use GitHub Pages this was the best I could do. Instead of using different HTML and CSS documents, I had to use only one of each and enabling the desired part of the HTML only when the user wants to use it by hiding the rest with a JavaScript function.

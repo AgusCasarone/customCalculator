@@ -1,5 +1,5 @@
-// DARK/LIGHT MODE starts with the dark theme
-
+// THEMETHEMETHEMETHEMETHEMETHEMETHEMETHEMETHEMETHEMETHEMETHEMETHEMETHEMETHEMETHEMETHEMETHEMETHEMETHEMETHEMETHEMETHEMETHEMETHEMETHEMETHEMETHEMETHEMETHEMETHEME
+// starts with the dark theme
 
 let activateLightTheme = document.getElementById("body")
 
@@ -12,7 +12,7 @@ function theme () {
     }
 }
 
-// CONVERSION
+// CONVERSIONCONVERSIONCONVERSIONCONVERSIONCONVERSIONCONVERSIONCONVERSIONCONVERSIONCONVERSIONCONVERSIONCONVERSIONCONVERSIONCONVERSIONCONVERSIONCONVERSIONCONVERSION
 
 let input = document.getElementById("users-number")
 
@@ -49,3 +49,26 @@ input.oninput = function updateValues() {
     finalResultMass.textContent = input.value + " kilos = " + resultMetricToAmericanMass.toFixed(3) + " pounds | " + input.value + " pounds = " + resultAmericanToMetricMass.toFixed(3) + " kilos"
 }
 
+// MODESELECTIONMODESELECTIONMODESELECTIONMODESELECTIONMODESELECTIONMODESELECTIONMODESELECTIONMODESELECTIONMODESELECTIONMODESELECTIONMODESELECTIONMODESELECTION
+
+let conversionButton = document.getElementsByClassName('conversion')
+let calculatorButton = document.getElementsByClassName('calculator')
+let ruleButton = document.getElementsByClassName('rule')
+
+function conversion () {
+    document.getElementsByClassName('conversion')[0].style.visibility = 'visible';
+    document.getElementsByClassName('rule')[0].style.visibility = 'hidden';
+    document.getElementsByClassName('calculator')[0].style.visibility = 'hidden';
+}
+
+function rule () {
+    document.getElementsByClassName('rule')[0].style.visibility = 'visible';
+    document.getElementsByClassName('conversion')[0].style.visibility = 'hidden';
+    document.getElementsByClassName('calculator')[0].style.visibility = 'hidden';
+}
+
+function calculator () {
+    document.getElementsByClassName('calculator')[0].style.visibility = 'visible';
+    document.getElementsByClassName('conversion')[0].style.visibility = 'hidden';
+    document.getElementsByClassName('rule')[0].style.visibility = 'hidden';
+}

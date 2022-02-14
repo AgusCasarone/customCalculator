@@ -21,30 +21,84 @@
         </nav>
         
         <main>
-            <div class="unit-input">
-                <h1>Metric/Imperial unit conversion</h1>
-                <input type="number" class="input-from-user-conversion" id="users-number" placeholder="Type your number here"></input>
+            <h1>Best calculator ever!!</h1>
+
+            <!-- CONVERSION -->
+            <div class="mode">
+                <div class="conversion feature">
+                    <div class="unit-input">
+                        <h2>Metric/Imperial unit conversion</h2>
+                        <input type="number" class="input-from-user-conversion" id="users-number" placeholder="Type your number here"></input>
+                    </div>
+                    <div class="results-main-container">
+                        <div class="results-container">
+                            <h3 class="type-of-conversion">
+                                Length (Meter/Feet)
+                            </h3>
+                            <p class="conversion-result" id="length">0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
+                        </div>
+                        <div class="results-container">
+                            <h3 class="type-of-conversion">
+                                Volume (Liters/Gallons)
+                            </h3>
+                            <p class="conversion-result" id="volume">0 liters = 0.000 gallons | 0 gallons = 0.000 liters</p>
+                        </div>
+                        <div class="results-container">
+                            <h3 class="type-of-conversion">
+                                Mass (Kilograms/Pounds)
+                            </h3>
+                            <p class="conversion-result" id="mass">0 kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="results-main-container">
-                <div class="results-container">
-                    <h3 class="type-of-conversion">
-                        Length (Meter/Feet)
-                    </h3>
-                    <p class="conversion-result" id="length">0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
-                </div>
-                <div class="results-container">
-                    <h3 class="type-of-conversion">
-                        Volume (Liters/Gallons)
-                    </h3>
-                    <p class="conversion-result" id="volume">0 liters = 0.000 gallons | 0 gallons = 0.000 liters</p>
-                </div>
-                <div class="results-container">
-                    <h3 class="type-of-conversion">
-                        Mass (Kilograms/Pounds)
-                    </h3>
-                    <p class="conversion-result" id="mass">0 kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
+
+            <!-- RULE OF THREE -->
+            <div class="mode">
+                <div class="rule feature">
+                    <div class="unit-input">
+                        <h1>Simple Rule of Three</h1>
+                        <div class="rule-inputs">
+                            <input type="number" class="input-from-user-rule" id="first-number" placeholder="25"></input>
+                            <input type="number" class="input-from-user-rule" id="second-number" placeholder="100"></input>
+                            </br>
+                            <input type="number" class="input-from-user-rule" id="third-number" placeholder="1"></input>
+                            <p id="result">4</p>
+                        </div>
+                    </div>
+                    <div class="results-main-container">
+                        <p>If I have </p><p id="explanation-first-number">25</p>
+                        <p>when there is </p><p id="explanation-second-number">100</p>
+                        </br>
+                        <p>then, when I have </p><p id="explanation-third-number">1</p>
+                        <p>there will be </p><p id="explanation-result-number">4</p>
+                    </div>
                 </div>
             </div>
+
+            <!-- CALCULATOR -->
+            <div class="mode">
+                <div class="calculator feature">
+                    <div class="unit-input">
+                        <h1>Calculator</h1>
+                        <div class="rule-inputs">
+                            <input type="number" class="input-from-user-rule" id="operation-start" placeholder="First number"></input>
+                            <input type="number" class="input-from-user-rule" id="operation-end" placeholder="second number"></input>
+                        </div>
+                        <div class="operation-selector">
+                            <button class="operation">+</button>
+                            <button class="operation">-</button>
+                            <button class="operation">/</button>
+                            <button class="operation">*</button>
+                        </div>
+                    </div>
+                    <div class="results-main-container">
+                        <h3>Results history</h3>
+                        <p class="results-history" id="history"></p>
+                    </div>
+                </div>
+            </div>
+
         </main>
         
         <footer>
@@ -53,13 +107,13 @@
             </div>
             <ul class="footer-nav-bar-container" id="footer-nav-bar-container">
                 <li>
-                    <a href="index.html">Conversion</a>
+                    <button class="select-feature-btn" href="index.html" onclick="conversion()">Conversion</button>
                 </li>
                 <li>
-                    <a href="calculator.html">Calculator</a>
+                    <button class="select-feature-btn" href="calculator.html" onclick="calculator()">Calculator</button>
                 </li>
                 <li>
-                    <a href="rule-of-three.html">Simple Rule of Three</a>
+                    <button class="select-feature-btn" href="rule-of-three.html" onclick="rule()">Simple Rule of Three</button>
                 </li>
             </ul>
         </footer>
